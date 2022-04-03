@@ -1,0 +1,26 @@
+#menubar {
+    padding: 0;
+}
+
+.active-route, .route {
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 15px;
+    transition: color 300ms;
+}
+
+.active-route, .route:hover {
+    color: #1E90C2;
+    border-bottom: 3px solid #1E90C2;
+}
+
+.route {
+    color: white;
+}
+
+@media screen and (max-width:500px) {
+    #menubar {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+}
