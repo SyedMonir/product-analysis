@@ -1,0 +1,11 @@
+.go-to-home-btn {
+    background-color: #1E90C2;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+
+.go-to-home-btn:hover {
+    color: white;
+}
