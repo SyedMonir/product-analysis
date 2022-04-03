@@ -1,0 +1,51 @@
+[
+  {
+    "id": "sgt01",
+    "name": "Cornpop",
+    "description": "While my total playtime on Steam may look short, believe me when I say I've put in hundreds of hours into this ABSOLUTE BEAST of a game back in my early teenage years from 2010-2013 on my Xbox 360 and PS3, or as I like to call it 'The Golden Age of Gaming.' ",
+    "rating": 5,
+    "image": "https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80"
+  },
+  {
+    "id": "sgt02",
+    "name": "WeezyLovesWeed",
+    "description": "still one of the best shooters i have ever played especially sniping got me harddd",
+    "rating": 4,
+    "image": "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80"
+  },
+  {
+    "id": "sgt03",
+    "name": "NightmareFoxCow",
+    "description": "cool current international situation",
+    "rating": 4.5,
+    "image": "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80"
+  },
+  {
+    "id": "sgt04",
+    "name": "DarkestBlade",
+    "description": "this is a brilliant game but there are WAAAY too many hackers to be able to enjoy it anymore",
+    "rating": 5,
+    "image": "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80"
+  },
+  {
+    "id": "sgt05",
+    "name": "Mountain",
+    "description": "It feels like snorting crack cocaine while Morgan freeman talks to you about the secrets of the universe while you are fighting mobs of Russians trying to steal hamburgers from your local Burgertown.",
+    "rating": 5,
+    "image": "https://images.unsplash.com/photo-1640951613773-54706e06851d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=800"
+  },
+  {
+    "id": "babelr1",
+    "name": "Halo",
+    "description": "Iconic, not much else to say. I think the game wouldn't be nearly as good without the amazing score by Hans Zimmer, major highlight of the campaign.",
+    "rating": 4,
+    "image": "https://images.unsplash.com/photo-1584999734482-0361aecad844?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80"
+  },
+  {
+    "id": "sgt07",
+    "name": "Bonteski",
+    "description": "Better than BF2042",
+    "rating": 4.5,
+    "image": "https://images.unsplash.com/photo-1640960543409-dbe56ccc30e2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80"
+  }
+]

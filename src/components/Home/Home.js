@@ -26,6 +26,9 @@ const Home = () => {
             />
           </Col>
         </Row>
+        <section className="my-5 text-center">
+          <h3>CUSTOMER REVIEWS</h3>
+        </section>
       </Container>
     </>
   );
