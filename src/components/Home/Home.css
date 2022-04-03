@@ -1,0 +1,15 @@
+.title {
+    letter-spacing: .1rem;
+    background: linear-gradient(86.79deg, #1B4388 4.66%, #1E90C2 96.55%, rgba(0, 0, 0, 0) 96.56%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.trailer-btn {
+    background-color: #1B4388;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+}
