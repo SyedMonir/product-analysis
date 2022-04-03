@@ -1,8 +1,12 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
+import useReviews from '../../hooks/useReviews';
+import Review from '../Review/Review';
 import './Home.css';
 
 const Home = () => {
+  const [reviews] = useReviews();
+  const recentReviews = reviews.slice(0, 3);
   return (
     <>
       <Container>
@@ -28,6 +32,11 @@ const Home = () => {
         </Row>
         <section className="my-5 text-center">
           <h3>CUSTOMER REVIEWS</h3>
+          <Row className=" justify-content-center">
+            {recentReviews.map((review) => (
+              <Review key={review.id} review={review}></Review>
+            ))}
+          </Row>
         </section>
       </Container>
     </>

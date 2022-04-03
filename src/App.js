@@ -8,7 +8,7 @@ import NoRoute from './components/NoRoute/NoRoute';
 function App() {
   return (
     <>
-      <header>
+      <header style={{ position: 'sticky', top: '0' }}>
         <Header />
       </header>
       <main>
