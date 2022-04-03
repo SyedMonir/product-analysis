@@ -8,7 +8,7 @@ const CustomerReviews = () => {
   console.log(reviews);
   return (
     <Container>
-      <Row>
+      <Row className="mx-auto justify-content-center">
         {reviews.map((review) => (
           <Review key={review.id} review={review}></Review>
         ))}
