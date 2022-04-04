@@ -2,6 +2,23 @@
     padding: 0;
 }
 
+#menubar .brand-logo {
+    padding-top: 0.3125rem;
+    padding-bottom: 0.3125rem;
+    padding-right: 0.3125rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    font-weight: 900;
+    text-decoration: none;
+    white-space: nowrap;
+    letter-spacing: .1rem;
+    color: white;
+    background: linear-gradient(86.79deg, #1E90C2 70.66%, #1B4388 96.55%, rgba(0, 0, 0, 0) 96.56%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
 .active-route, .route {
     text-decoration: none;
     text-transform: uppercase;

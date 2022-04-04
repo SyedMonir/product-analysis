@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import './Header.css';
 
 const Header = () => {
@@ -8,7 +8,9 @@ const Header = () => {
     <>
       <Navbar id="menubar" bg="dark" variant="dark" expand="lg">
         <Container>
-          <Navbar.Brand href="/">Games Breakdown</Navbar.Brand>
+          <Link className="brand-logo" to="/">
+            Games Breakdown
+          </Link>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
