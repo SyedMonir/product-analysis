@@ -1,5 +1,6 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import useReviews from '../../hooks/useReviews';
 import Review from '../Review/Review';
 import './Home.css';
@@ -32,11 +33,14 @@ const Home = () => {
         </Row>
         <section className="my-5 text-center">
           <h3>CUSTOMER REVIEWS</h3>
-          <Row className=" justify-content-center">
+          <Row className="mb-4 justify-content-center">
             {recentReviews.map((review) => (
               <Review key={review.id} review={review}></Review>
             ))}
           </Row>
+          <Link className="my-5 see-all-reviews-btn" to={`/customer-reviews`}>
+            See all reviews
+          </Link>
         </section>
       </Container>
     </>

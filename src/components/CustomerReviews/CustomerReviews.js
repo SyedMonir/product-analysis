@@ -5,7 +5,7 @@ import Review from '../Review/Review';
 
 const CustomerReviews = () => {
   const [reviews] = useReviews();
-  console.log(reviews);
+  // console.log(reviews);
   return (
     <Container>
       <Row className="mx-auto justify-content-center">
