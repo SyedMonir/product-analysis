@@ -31,6 +31,8 @@ const Home = () => {
             />
           </Col>
         </Row>
+      </Container>
+      <Container>
         <section className="my-5 text-center">
           <h3 className="title">MOST HELPFUL REVIEWS</h3>
           <hr className="hr" />
