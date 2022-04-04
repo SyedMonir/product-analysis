@@ -26,7 +26,8 @@ function App() {
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/blogs" element={<Blogs />} />
           <Route path="/about" element={<About />}>
-            <Route index path="terms-and-condition" element={<TermsOfUse />} />
+            <Route index element={<TermsOfUse />} />
+            <Route path="terms-and-condition" element={<TermsOfUse />} />
             <Route path="privacy" element={<Privacy />} />
             <Route path="license" element={<License />} />
           </Route>

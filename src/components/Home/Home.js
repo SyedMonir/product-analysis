@@ -1,12 +1,13 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import Spinner from 'react-spinkit';
 import useReviews from '../../hooks/useReviews';
 import Review from '../Review/Review';
 import './Home.css';
 
 const Home = () => {
-  const [reviews] = useReviews();
+  const [reviews, , loading] = useReviews();
   const recentReviews = reviews.slice(0, 3);
   return (
     <>
@@ -36,11 +37,16 @@ const Home = () => {
         <section className="my-5 text-center">
           <h3 className="title">MOST HELPFUL REVIEWS</h3>
           <hr className="hr" />
-          <Row className="mb-4 justify-content-center">
-            {recentReviews.map((review) => (
-              <Review key={review.id} review={review}></Review>
-            ))}
-          </Row>
+          {loading ? (
+            <Spinner name="folding-cube" className="spinner" color="#1E90C2" />
+          ) : (
+            <Row className="mb-4 justify-content-center">
+              {recentReviews.map((review) => (
+                <Review key={review.id} review={review}></Review>
+              ))}
+            </Row>
+          )}
+
           <Link className="my-5 see-all-reviews-btn" to={`/reviews`}>
             See all reviews
           </Link>

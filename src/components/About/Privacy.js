@@ -3,6 +3,7 @@ import React from 'react';
 const Privacy = () => {
   return (
     <div>
+      <h3>Privacy</h3>
       <p>
         © 2022 Demo Corporation. All rights reserved. Demo, the Demo logo,
         Half-Life, the Half-Life logo, the Lambda logo, Steam, the Steam logo,
