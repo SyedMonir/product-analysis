@@ -8,6 +8,8 @@ const CustomerReviews = () => {
   // console.log(reviews);
   return (
     <Container>
+      <h3 className="title text-center my-3">CUSTOMER REVIEWS</h3>
+      <hr className="hr" />
       <Row className="mx-auto justify-content-center">
         {reviews.map((review) => (
           <Review key={review.id} review={review}></Review>

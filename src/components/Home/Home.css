@@ -6,6 +6,17 @@
     background-clip: text;
 }
 
+.hr {
+    width: 25%;
+    margin: 10px auto;
+    border-radius: 5px;
+    color: #1B4388;
+}
+
+hr:not([size]) {
+    height: 2px !important;
+}
+
 .trailer-btn, .see-all-reviews-btn {
     background-color: #1B4388;
     color: white;

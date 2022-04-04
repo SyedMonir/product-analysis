@@ -32,7 +32,8 @@ const Home = () => {
           </Col>
         </Row>
         <section className="my-5 text-center">
-          <h3>CUSTOMER REVIEWS</h3>
+          <h3 className="title">MOST HELPFUL REVIEWS</h3>
+          <hr className="hr" />
           <Row className="mb-4 justify-content-center">
             {recentReviews.map((review) => (
               <Review key={review.id} review={review}></Review>

@@ -1,5 +1,21 @@
 import React from 'react';
-import { Line, LineChart, XAxis, YAxis } from 'recharts';
+import { Col, Container, Row } from 'react-bootstrap';
+import {
+  Area,
+  AreaChart,
+  Bar,
+  BarChart,
+  CartesianGrid,
+  Legend,
+  Line,
+  LineChart,
+  Pie,
+  PieChart,
+  Tooltip,
+  XAxis,
+  YAxis,
+} from 'recharts';
+import './Dashboard.css';
 
 const Dashboard = () => {
   const data = [
@@ -42,15 +58,104 @@ const Dashboard = () => {
   ];
 
   return (
-    <div>
-      <h1>Dashboard</h1>
-      <LineChart width={600} height={300} data={data}>
-        <Line type="monotone" dataKey="sell" stroke="#8884d8" />
-        {/* <CartesianGrid stroke="#ccc" /> */}
-        <XAxis dataKey="month" />
-        <YAxis />
-      </LineChart>
-    </div>
+    <Container className="dashboard mt-5">
+      <Row>
+        <Col>
+          <h4 className="text-center mb-3">Month Wise Sell</h4>
+          <LineChart width={500} height={300} data={data} className="mx-auto">
+            <Line type="monotone" dataKey="sell" stroke="#8884d8" />
+            <XAxis dataKey="month" />
+            <YAxis />
+            <Tooltip />
+            <Legend />
+          </LineChart>
+        </Col>
+        {/* Another chart */}
+        <Col>
+          <h4 className="text-center mb-3">Investment vs Revenue</h4>
+          <AreaChart
+            width={500}
+            height={350}
+            data={data}
+            className="mx-auto"
+            margin={{
+              top: 10,
+              right: 30,
+              left: 0,
+              bottom: 0,
+            }}
+          >
+            <CartesianGrid strokeDasharray="3 3" />
+            <XAxis dataKey="month" />
+            <YAxis />
+            <Tooltip />
+            <Area
+              type="monotone"
+              dataKey="investment"
+              stroke="#82ca9d"
+              fill="#82ca9d"
+            />
+            <Area
+              type="monotone"
+              dataKey="revenue"
+              stackId="1"
+              stroke="#8884d8"
+              fill="#8884d8"
+            />
+          </AreaChart>
+        </Col>
+      </Row>
+      {/* Another Row */}
+      <Row className="mt-5">
+        <Col>
+          <h4 className="text-center mb-3">Investment vs Revenue</h4>
+          <BarChart
+            width={500}
+            height={300}
+            data={data}
+            className="mx-auto"
+            margin={{
+              top: 20,
+              right: 30,
+              left: 20,
+              bottom: 5,
+            }}
+          >
+            <CartesianGrid strokeDasharray="3 3" />
+            <XAxis dataKey="month" />
+            <YAxis />
+            <Tooltip />
+            <Legend />
+            <Bar dataKey="investment" stackId="a" fill="#8884d8" />
+            <Bar dataKey="revenue" stackId="a" fill="#82ca9d" />
+          </BarChart>
+        </Col>
+        {/* Another chart */}
+        <Col>
+          <h4 className="text-center mb-3">Investment vs Revenue</h4>
+          <PieChart width={400} height={400} className="mx-auto">
+            <Pie
+              data={data}
+              dataKey="investment"
+              cx="50%"
+              cy="50%"
+              outerRadius={60}
+              fill="#8884d8"
+            />
+            <Pie
+              data={data}
+              dataKey="revenue"
+              cx="50%"
+              cy="50%"
+              innerRadius={70}
+              outerRadius={90}
+              fill="#82ca9d"
+              label
+            />
+          </PieChart>
+        </Col>
+      </Row>
+    </Container>
   );
 };
 
