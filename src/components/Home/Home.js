@@ -41,7 +41,7 @@ const Home = () => {
               <Review key={review.id} review={review}></Review>
             ))}
           </Row>
-          <Link className="my-5 see-all-reviews-btn" to={`/customer-reviews`}>
+          <Link className="my-5 see-all-reviews-btn" to={`/reviews`}>
             See all reviews
           </Link>
         </section>

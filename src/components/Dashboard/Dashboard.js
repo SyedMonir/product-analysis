@@ -60,8 +60,8 @@ const Dashboard = () => {
     <Container className="dashboard mt-5">
       <Row>
         <Col>
-          <h4 className="text-center mb-3">Month Wise Sell</h4>
-          <LineChart width={500} height={300} data={data} className="mx-auto">
+          <h4 className="text-center my-3">Month Wise Sell</h4>
+          <LineChart width={400} height={300} data={data} className="mx-auto">
             <Line type="monotone" dataKey="sell" stroke="#8884d8" />
             <XAxis dataKey="month" />
             <YAxis />
@@ -71,10 +71,10 @@ const Dashboard = () => {
         </Col>
         {/* Another chart */}
         <Col>
-          <h4 className="text-center mb-3">Investment vs Revenue</h4>
+          <h4 className="text-center my-3">Investment vs Revenue</h4>
           <AreaChart
-            width={500}
-            height={350}
+            width={400}
+            height={300}
             data={data}
             className="mx-auto"
             margin={{
@@ -107,9 +107,9 @@ const Dashboard = () => {
       {/* Another Row */}
       <Row className="mt-5">
         <Col>
-          <h4 className="text-center mb-3">Investment vs Revenue</h4>
+          <h4 className="text-center my-3">Investment vs Revenue</h4>
           <BarChart
-            width={500}
+            width={400}
             height={300}
             data={data}
             className="mx-auto"
@@ -131,7 +131,7 @@ const Dashboard = () => {
         </Col>
         {/* Another chart */}
         <Col>
-          <h4 className="text-center mb-3">Investment vs Revenue</h4>
+          <h4 className="text-center my-3">Investment vs Revenue</h4>
           <PieChart width={400} height={400} className="mx-auto">
             <Pie
               data={data}
