@@ -1,0 +1,16 @@
+.toggle-btn {
+    background-color: #1B4388;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    transition: all 200ms;
+    text-transform: capitalize;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.toggle-btn:hover {
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}

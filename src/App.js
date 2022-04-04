@@ -1,6 +1,9 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import About from './components/About/About';
+import License from './components/About/License';
+import Privacy from './components/About/Privacy';
+import TermsOfUse from './components/About/TermsOfUse';
 import Blogs from './components/Blogs/Blogs';
 import CustomerReviews from './components/CustomerReviews/CustomerReviews';
 import Dashboard from './components/Dashboard/Dashboard';
@@ -22,7 +25,11 @@ function App() {
           <Route path="/reviews" element={<CustomerReviews />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/blogs" element={<Blogs />} />
-          <Route path="/about" element={<About />} />
+          <Route path="/about" element={<About />}>
+            <Route index path="terms-and-condition" element={<TermsOfUse />} />
+            <Route path="privacy" element={<Privacy />} />
+            <Route path="license" element={<License />} />
+          </Route>
           <Route path="*" element={<NoRoute />} />
         </Routes>
       </main>

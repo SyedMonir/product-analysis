@@ -13,8 +13,9 @@ const Footer = () => {
       </small>
       <nav className="footer-nav">
         <button onClick={handleBackToTop}>Back to Top</button>
-        <Link to="/about">Terms of Use</Link>
-        <Link to="/about">Privacy</Link>
+        <Link to="/about/terms-and-condition">Terms And Condition</Link>
+        <Link to="/about/privacy">Privacy</Link>
+        <Link to="/about/license">License</Link>
       </nav>
     </footer>
   );
