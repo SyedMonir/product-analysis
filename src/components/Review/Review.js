@@ -1,5 +1,7 @@
 import React from 'react';
+import Rating from 'react-rating';
 import './Review.css';
+import { FaStar } from 'react-icons/fa';
 
 const Review = ({ review }) => {
   const { name, description, image, rating } = review;
@@ -10,7 +12,16 @@ const Review = ({ review }) => {
           <img src={image} alt={name} width={50} className="me-3" />
           <h6>{name}</h6>
         </div>
-        <span>Rating: {rating}</span>
+        {/* <span>Rating: {rating}</span> */}
+        <span>
+          <Rating
+            initialRating={rating}
+            emptySymbol={<FaStar />}
+            fullSymbol={<FaStar style={{ color: 'goldenrod' }} />}
+            readonly
+          ></Rating>
+          ({rating})
+        </span>
       </div>
       <p className="pt-2">{description}</p>
     </div>
